@@ -9,6 +9,8 @@ anyio==4.12.1
     #   httpx
     #   starlette
     #   watchfiles
+asyncpg==0.31.0
+    # via beyond-crud
 certifi==2026.1.4
     # via
     #   httpcore
@@ -37,6 +39,8 @@ fastapi-cloud-cli==0.11.0
     # via fastapi-cli
 fastar==0.8.0
     # via fastapi-cloud-cli
+greenlet==3.3.1 ; platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'
+    # via sqlalchemy
 h11==0.16.0
     # via
     #   httpcore
@@ -68,6 +72,7 @@ pydantic==2.12.5
     #   fastapi-cloud-cli
     #   pydantic-extra-types
     #   pydantic-settings
+    #   sqlmodel
 pydantic-core==2.41.5
     # via pydantic
 pydantic-extra-types==2.11.0
@@ -98,6 +103,12 @@ sentry-sdk==2.51.0
     # via fastapi-cloud-cli
 shellingham==1.5.4
     # via typer
+sqlalchemy==2.0.46
+    # via
+    #   beyond-crud
+    #   sqlmodel
+sqlmodel==0.0.32
+    # via beyond-crud
 starlette==0.50.0
     # via fastapi
 typer==0.21.1
@@ -111,6 +122,7 @@ typing-extensions==4.15.0
     #   pydantic-core
     #   pydantic-extra-types
     #   rich-toolkit
+    #   sqlalchemy
     #   typer
     #   typing-inspection
 typing-inspection==0.4.2
