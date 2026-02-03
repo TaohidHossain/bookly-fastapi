@@ -9,7 +9,11 @@ wheels/
 # Virtual environments
 .venv
 
+# environment variables
 .env
+
+# migrations
+migrations/
 
 
 README.md
