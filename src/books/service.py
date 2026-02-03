@@ -2,8 +2,8 @@ from datetime import datetime
 from sqlalchemy.ext.asyncio.session import AsyncSession
 from sqlmodel import select, desc
 
-from books.schemas import BookCreate, BookUpdate
-from books.models import Book as BookModel
+from src.books.schemas import BookCreate, BookUpdate
+from src.books.models import Book as BookModel
 
 class BookService:
     async def get_all_books(self, session: AsyncSession):

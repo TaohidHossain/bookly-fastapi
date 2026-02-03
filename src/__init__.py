@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 
-from db.main import init_db
-from books.routes import book_router
+from src.db.main import init_db
+from src.books.routes import book_router
 
 version = "v1"
 description = """

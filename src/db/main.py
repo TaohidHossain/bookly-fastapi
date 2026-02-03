@@ -16,7 +16,7 @@ engine = AsyncEngine(
 
 async def init_db():
     async with engine.begin() as conn:
-        from books.models import Book  # Import here to avoid circular imports
+        from src.books.models import Book  # Import here to avoid circular imports
         await conn.run_sync(SQLModel.metadata.create_all)
 
 async def get_session() -> AsyncSession: # type: ignore
