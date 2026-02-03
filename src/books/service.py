@@ -44,4 +44,4 @@ class BookService:
             return None
         await session.delete(book_to_delete[0])
         await session.commit()
-        return book_to_delete[0]
+        return book_to_delete
