@@ -14,6 +14,7 @@ wheels/
 
 # migrations
 migrations/
+alembic.ini
 
 
 README.md
